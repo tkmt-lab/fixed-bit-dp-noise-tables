@@ -1,0 +1,98 @@
+{
+  "spec": {
+    "D": [
+      "a",
+      "b"
+    ],
+    "Y": [
+      "x",
+      "y",
+      "z"
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "r": "3/2",
+    "b": 4,
+    "loss": [
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    "output_constraints": {
+      "forbidden": [
+        [
+          0,
+          0
+        ]
+      ],
+      "min_counts": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "max_counts": [
+        [
+          12,
+          16,
+          16
+        ],
+        [
+          12,
+          16,
+          16
+        ]
+      ]
+    }
+  },
+  "status": "UNSAT",
+  "table": null,
+  "samplers": null,
+  "optimization_scope": "original_spec_loss",
+  "solver_status": "Infeasible",
+  "seconds": 0.00014558399561792612,
+  "nodes": 0,
+  "solver_objective": null,
+  "solver_lower_bound": null,
+  "certificate": {
+    "version": 1,
+    "tree": {
+      "kind": "infeasible",
+      "dual": {
+        "7": "1/6",
+        "10": "1/2",
+        "14": "1/3"
+      }
+    }
+  },
+  "proof_stats": {
+    "complete": true,
+    "nodes": 1,
+    "integer_cost_scale": 1,
+    "exact": "PASS",
+    "seconds": 0.0005395840853452682,
+    "visited": 1
+  },
+  "verification": {
+    "status_protocol": "PASS",
+    "status": "UNSAT",
+    "words": 0
+  }
+}

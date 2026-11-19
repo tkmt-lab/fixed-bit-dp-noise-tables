@@ -1,0 +1,268 @@
+{
+  "spec": {
+    "D": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "Y": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "r": "2",
+    "b": 7,
+    "loss": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        6,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        5,
+        6,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        6,
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        5,
+        6,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        0
+      ]
+    ]
+  },
+  "status": "FEASIBLE",
+  "table": [
+    [
+      22,
+      28,
+      26,
+      11,
+      14,
+      14,
+      13
+    ],
+    [
+      11,
+      28,
+      26,
+      22,
+      14,
+      14,
+      13
+    ],
+    [
+      11,
+      14,
+      26,
+      22,
+      28,
+      14,
+      13
+    ],
+    [
+      11,
+      14,
+      13,
+      22,
+      28,
+      27,
+      13
+    ],
+    [
+      11,
+      14,
+      13,
+      11,
+      28,
+      28,
+      23
+    ],
+    [
+      22,
+      14,
+      13,
+      11,
+      14,
+      28,
+      26
+    ],
+    [
+      22,
+      28,
+      13,
+      11,
+      14,
+      14,
+      26
+    ]
+  ],
+  "samplers": {
+    "python": "sampler.py",
+    "c": "sampler.c",
+    "bits": 7,
+    "input_contract": "valid D index and uniform word in [0,2^b)",
+    "constant_time_claim": false
+  },
+  "seconds": 0.15895845799241215,
+  "nodes": 4,
+  "solver_objective": 2152.000000005309,
+  "solver_lower_bound": 2152.000000005309,
+  "loss": "269/112",
+  "verification": {
+    "status": "PASS",
+    "integer_dp": "PASS",
+    "output_constraints": "PASS",
+    "mapping_languages": [
+      "python",
+      "c"
+    ],
+    "words": 1792,
+    "c_source_single_lookup": true,
+    "c_compiler": "clang -std=c11 -O2"
+  },
+  "optimization_scope": "original_spec_loss",
+  "original_solver_status": "Optimal",
+  "status_note": "Historical table: feasibility verified; optimality is tracked only in separate certificates."
+}

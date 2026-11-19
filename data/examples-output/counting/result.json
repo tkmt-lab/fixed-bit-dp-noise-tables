@@ -1,0 +1,161 @@
+{
+  "spec": {
+    "D": [
+      0,
+      1,
+      2
+    ],
+    "Y": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "r": "2",
+    "b": 4,
+    "loss": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0,
+        1
+      ]
+    ]
+  },
+  "status": "OPTIMAL",
+  "table": [
+    [
+      10,
+      3,
+      3,
+      0
+    ],
+    [
+      5,
+      6,
+      5,
+      0
+    ],
+    [
+      3,
+      3,
+      10,
+      0
+    ]
+  ],
+  "samplers": {
+    "python": "sampler.py",
+    "c": "sampler.c",
+    "bits": 4,
+    "input_contract": "valid D index and uniform word in [0,2^b)",
+    "constant_time_claim": false
+  },
+  "optimization_scope": "original_spec_loss",
+  "solver_status": "Optimal",
+  "seconds": 0.009026541956700385,
+  "nodes": 1,
+  "solver_objective": 28.0,
+  "solver_lower_bound": 28.0,
+  "loss": "7/12",
+  "certificate": {
+    "version": 1,
+    "tree": {
+      "kind": "branch",
+      "variable": 6,
+      "split": 5,
+      "left": {
+        "kind": "branch",
+        "variable": 2,
+        "split": 2,
+        "left": {
+          "kind": "bound",
+          "dual": {
+            "0": "2/3",
+            "2": "1/6",
+            "4": "1",
+            "6": "2/3",
+            "11": "1/6",
+            "12": "7/6",
+            "14": "1/2",
+            "20": "1",
+            "23": "1"
+          }
+        },
+        "right": {
+          "kind": "bound",
+          "dual": {
+            "0": "2/3",
+            "2": "1/6",
+            "4": "1",
+            "6": "2/3",
+            "11": "1/6",
+            "14": "1/2",
+            "20": "1",
+            "22": "7/6",
+            "23": "4/3"
+          }
+        }
+      },
+      "right": {
+        "kind": "bound",
+        "dual": {
+          "0": "2/3",
+          "2": "2/3",
+          "6": "2/3",
+          "11": "1/6",
+          "12": "2/3",
+          "14": "1",
+          "15": "1/2",
+          "22": "1"
+        }
+      }
+    }
+  },
+  "proof_stats": {
+    "complete": true,
+    "nodes": 5,
+    "integer_cost_scale": 1,
+    "exact": "PASS",
+    "seconds": 0.0017022909596562386,
+    "visited": 5
+  },
+  "verification": {
+    "status": "PASS",
+    "proof": {
+      "nodes": 5,
+      "integer_cost_scale": 1,
+      "exact": "PASS"
+    },
+    "integer_dp": "PASS",
+    "output_constraints": "PASS",
+    "mapping_languages": [
+      "python",
+      "c"
+    ],
+    "words": 96,
+    "c_source_single_lookup": true,
+    "c_compiler": "clang -std=c11 -O2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Fixed-bit differential privacy tables and samplers",
+  "upload_type": "software",
+  "description": "Finite-bit differential privacy tables, samplers, and exact rational certificates. Project code is Apache-2.0; original data and documentation are CC-BY-4.0.",
+  "creators": [
+    {
+      "name": "Takimoto, Tatsuhiko",
+      "affiliation": "Independent researcher"
+    }
+  ],
+  "version": "1.0.0",
+  "access_right": "open",
+  "keywords": [
+    "differential privacy",
+    "finite random bits",
+    "integer certificates"
+  ],
+  "license": "cc-by-4.0",
+  "publication_date": "2026-11-19",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/tkmt-lab/fixed-bit-dp-noise-tables",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "spec": {
+    "D": [
+      0,
+      1,
+      2
+    ],
+    "Y": [
+      0,
+      1,
+      2
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "r": "2",
+    "b": 5,
+    "loss": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ]
+    ]
+  },
+  "status": "FEASIBLE",
+  "table": [
+    [
+      16,
+      8,
+      8
+    ],
+    [
+      8,
+      16,
+      8
+    ],
+    [
+      8,
+      8,
+      16
+    ]
+  ],
+  "samplers": {
+    "python": "sampler.py",
+    "c": "sampler.c",
+    "bits": 5,
+    "input_contract": "valid D index and uniform word in [0,2^b)",
+    "constant_time_claim": false
+  },
+  "seconds": 0.003913958091288805,
+  "nodes": 1,
+  "solver_objective": 72.0,
+  "solver_lower_bound": 72.0,
+  "loss": "3/4",
+  "verification": {
+    "status": "PASS",
+    "integer_dp": "PASS",
+    "output_constraints": "PASS",
+    "mapping_languages": [
+      "python",
+      "c"
+    ],
+    "words": 192,
+    "c_source_single_lookup": true,
+    "c_compiler": "clang -std=c11 -O2"
+  },
+  "optimization_scope": "original_spec_loss",
+  "original_solver_status": "Optimal",
+  "status_note": "Historical table: feasibility verified; optimality is tracked only in separate certificates."
+}

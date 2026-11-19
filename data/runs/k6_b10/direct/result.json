@@ -1,0 +1,212 @@
+{
+  "spec": {
+    "D": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "Y": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "r": "2",
+    "b": 10,
+    "loss": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        5,
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        5,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ]
+    ]
+  },
+  "status": "FEASIBLE",
+  "table": [
+    [
+      0,
+      682,
+      0,
+      1,
+      340,
+      1
+    ],
+    [
+      0,
+      682,
+      0,
+      1,
+      340,
+      1
+    ],
+    [
+      0,
+      341,
+      0,
+      2,
+      680,
+      1
+    ],
+    [
+      0,
+      341,
+      0,
+      2,
+      680,
+      1
+    ],
+    [
+      0,
+      341,
+      0,
+      1,
+      680,
+      2
+    ],
+    [
+      0,
+      681,
+      0,
+      1,
+      340,
+      2
+    ]
+  ],
+  "samplers": {
+    "python": "sampler.py",
+    "c": "sampler.c",
+    "bits": 10,
+    "input_contract": "valid D index and uniform word in [0,2^b)",
+    "constant_time_claim": false
+  },
+  "seconds": 0.007963416050188243,
+  "nodes": 1,
+  "solver_objective": 12288.0,
+  "solver_lower_bound": 12288.0,
+  "loss": "2",
+  "verification": {
+    "status": "PASS",
+    "integer_dp": "PASS",
+    "output_constraints": "PASS",
+    "mapping_languages": [
+      "python",
+      "c"
+    ],
+    "words": 12288,
+    "c_source_single_lookup": true,
+    "c_compiler": "clang -std=c11 -O2"
+  },
+  "optimization_scope": "original_spec_loss",
+  "original_solver_status": "Optimal",
+  "status_note": "Historical table: feasibility verified; optimality is tracked only in separate certificates."
+}

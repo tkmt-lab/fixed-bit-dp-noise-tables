@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "id": "benchmark-optimality",
+      "evidence": [
+        "data/proofs/",
+        "data/improved-output/result.json"
+      ],
+      "verification": [
+        "python3 -B verify.py"
+      ],
+      "not_claimed": [
+        "the two other optima",
+        "general optimality beyond supplied certificates"
+      ],
+      "statement": "52 of 54 benchmark conditions have certified optimal tables, including the corrected k=5,b=11 table",
+      "remaining_obligations": [
+        "the two other optima",
+        "general optimality beyond supplied certificates"
+      ]
+    },
+    {
+      "id": "unsat-example",
+      "evidence": [
+        "data/examples-output/unsat/result.json"
+      ],
+      "verification": [
+        "python3 -B verify.py"
+      ],
+      "not_claimed": [
+        "all other instances are infeasible"
+      ],
+      "statement": "The supplied constrained example has a rational infeasibility certificate",
+      "remaining_obligations": [
+        "all other instances are infeasible"
+      ]
+    },
+    {
+      "id": "mappings",
+      "evidence": [
+        "data/runs/"
+      ],
+      "verification": [
+        "python3 -B verify.py"
+      ],
+      "not_claimed": [
+        "constant time",
+        "side channel resistance",
+        "secure randomness",
+        "hardware performance"
+      ],
+      "statement": "108 supplied historical sampler pairs implement their saved integer tables for valid indices and fair b-bit words",
+      "remaining_obligations": [
+        "constant time",
+        "side channel resistance",
+        "secure randomness",
+        "hardware performance"
+      ]
+    },
+    {
+      "id": "correction",
+      "evidence": [
+        "data/proofs/k5_b11.json",
+        "data/improved-output/result.json"
+      ],
+      "verification": [
+        "python3 -B verify.py"
+      ],
+      "not_claimed": [
+        "the original table was optimal"
+      ],
+      "statement": "The original k=5,b=11 feasible table cost 16093 and the certified improved table costs 16092",
+      "remaining_obligations": [
+        "the original table was optimal"
+      ]
+    }
+  ],
+  "scope": "v1.0.0; b<=12; no general novelty claim",
+  "schema_version": 1,
+  "title": "Fixed-bit differential privacy tables and samplers",
+  "version": "1.0.0"
+}

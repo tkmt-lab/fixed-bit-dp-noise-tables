@@ -1,0 +1,205 @@
+{
+  "spec": {
+    "D": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "Y": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "r": "2",
+    "b": 10,
+    "loss": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        4,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        0
+      ]
+    ]
+  },
+  "status": "FEASIBLE",
+  "table": [
+    [
+      292,
+      292,
+      147,
+      147,
+      146
+    ],
+    [
+      146,
+      292,
+      293,
+      147,
+      146
+    ],
+    [
+      146,
+      146,
+      293,
+      293,
+      146
+    ],
+    [
+      146,
+      146,
+      147,
+      293,
+      292
+    ],
+    [
+      292,
+      146,
+      147,
+      147,
+      292
+    ]
+  ],
+  "samplers": {
+    "python": "sampler.py",
+    "c": "sampler.c",
+    "bits": 10,
+    "input_contract": "valid D index and uniform word in [0,2^b)",
+    "constant_time_claim": false
+  },
+  "seconds": 0.07441912509966642,
+  "nodes": 7,
+  "solver_objective": 8049.999999999999,
+  "solver_lower_bound": 8049.999999999999,
+  "loss": "805/512",
+  "l1_distance": 12,
+  "distance_seconds": 0.02754912490490824,
+  "verification": {
+    "status": "PASS",
+    "integer_dp": "PASS",
+    "output_constraints": "PASS",
+    "mapping_languages": [
+      "python",
+      "c"
+    ],
+    "words": 10240,
+    "c_source_single_lookup": true,
+    "c_compiler": "clang -std=c11 -O2"
+  },
+  "optimization_scope": "loss_with_fixed_l1",
+  "repair_reference": [
+    [
+      293,
+      293,
+      146,
+      146,
+      146
+    ],
+    [
+      146,
+      293,
+      293,
+      146,
+      146
+    ],
+    [
+      146,
+      146,
+      293,
+      293,
+      146
+    ],
+    [
+      146,
+      146,
+      146,
+      293,
+      293
+    ],
+    [
+      293,
+      146,
+      146,
+      146,
+      293
+    ]
+  ],
+  "fixed_l1_distance": 12,
+  "original_solver_status": "Optimal",
+  "status_note": "Historical table: feasibility verified; optimality is tracked only in separate certificates.",
+  "original_distance_solver_status": "OPTIMAL"
+}

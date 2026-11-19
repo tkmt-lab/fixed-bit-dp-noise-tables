@@ -1,0 +1,164 @@
+{
+  "spec": {
+    "D": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "Y": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "r": "2",
+    "b": 8,
+    "loss": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        4,
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        3,
+        4,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        0
+      ]
+    ]
+  },
+  "status": "FEASIBLE",
+  "table": [
+    [
+      72,
+      74,
+      37,
+      36,
+      37
+    ],
+    [
+      36,
+      74,
+      73,
+      36,
+      37
+    ],
+    [
+      36,
+      37,
+      74,
+      72,
+      37
+    ],
+    [
+      36,
+      37,
+      37,
+      72,
+      74
+    ],
+    [
+      72,
+      37,
+      37,
+      36,
+      74
+    ]
+  ],
+  "samplers": {
+    "python": "sampler.py",
+    "c": "sampler.c",
+    "bits": 8,
+    "input_contract": "valid D index and uniform word in [0,2^b)",
+    "constant_time_claim": false
+  },
+  "seconds": 0.00912766600959003,
+  "nodes": 1,
+  "solver_objective": 2012.000000002023,
+  "solver_lower_bound": 2012.000000002023,
+  "loss": "503/320",
+  "verification": {
+    "status": "PASS",
+    "integer_dp": "PASS",
+    "output_constraints": "PASS",
+    "mapping_languages": [
+      "python",
+      "c"
+    ],
+    "words": 2560,
+    "c_source_single_lookup": true,
+    "c_compiler": "clang -std=c11 -O2"
+  },
+  "optimization_scope": "original_spec_loss",
+  "original_solver_status": "Optimal",
+  "status_note": "Historical table: feasibility verified; optimality is tracked only in separate certificates."
+}
